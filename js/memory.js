@@ -8,7 +8,7 @@
 		const images = itemimages.slice(0,itemimages.length-3);	//alle bilder und namen
 		let bgimg = itemimages[itemimages.length-2]["img"]; 	//background img src
 		let winimg = itemimages[itemimages.length-1]["img"];		//win img
-		let idTIme = 0;	//id für count up timer
+		let idTime = 0;	//id für count up timer
 		
 		//Einstellungen vor dem Beginn
 		$('#startSeite').hide();
@@ -17,10 +17,16 @@
 		$('#win').empty().append('<img src="'+winimg+'">');
 		
 		$('#nextlevel').text('Level ' + levelNumber).off('click').on('click',function(){ //entfern vorheriges Event und dann neu Event hinzufügen				
-			startLevel(levelNumber);				
+			idTime = startLevel(levelNumber);				
 		}).trigger('click');	
 		
-		
+		$('#close').off('click').on('click',function(){ //entfern vorheriges Event und dann neu Event hinzufügen				
+			clearInterval(idTime);	
+			$('#game').hide();
+			$('#startSeite').show();
+			$('#menu').hide();
+			$('#time').hide();
+		});
 		function startLevel(levelNum){//beginn eines level
 			
 			$('#allelevel').empty();
@@ -56,6 +62,8 @@
 				
 			});
 			showAllHideAll(1300);//Am anfang alle Bilder kurz zeigen
+                        
+                        return id;
 			
 			
 		}

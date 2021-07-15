@@ -21,6 +21,7 @@
 			<b id="minute">00</b>:<b id="sekunde">00</b>
 			<button id="start"><i class="fas fa-play"></i></button>
 			<button id="pause"><i class="fas fa-pause"></i></button>
+                        <button id="close"><i class="fas fa-times"></i></button>
 		</div>
 		
 		<div id="menu">
