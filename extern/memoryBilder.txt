@@ -1,0 +1,11 @@
+[
+	{
+		"title":"book",
+		"dataPath":"extern/book.txt"
+	},
+	{
+		"title":"socialmedia",
+		"dataPath":"extern/socialmedia.txt"
+	}
+
+]

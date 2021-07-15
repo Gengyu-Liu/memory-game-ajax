@@ -1,0 +1,7 @@
+**/nbproject
+images/mario
+images/obst
+images/tier
+extern/obst.txt
+extern/tier.txt
+extern/mario.txt
