@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>ein memory Spiel mit mario Figuren</title>
+		<title>ein memory Spiel mit Icons</title>
 		<link href="css/memoryspiel.css" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/029b79cb8b.js" crossorigin="anonymous"></script> <!--font awesome 5-->
 	</head>
