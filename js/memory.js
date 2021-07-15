@@ -9,6 +9,7 @@
 		let bgimg = itemimages[itemimages.length-2]["img"]; 	//background img src
 		let winimg = itemimages[itemimages.length-1]["img"];		//win img
 		let idTime = 0;	//id für count up timer
+                let totalLevelNum = 3;
 		
 		//Einstellungen vor dem Beginn
 		$('#startSeite').hide();
@@ -160,7 +161,7 @@
 			$('#zeitlevel').html('<b>Du hast in '+seconds+' Sekunden Level '+levelNumber+ ' geschafft</b>');	
 			
 			levelNumber++;//level number + 1 --> nächstes Level
-			if(levelNumber > 3) {//das Ende von Level 4(wenn alle level fertig sind)
+			if(levelNumber > totalLevelNum) {//das Ende von letze Level (wenn alle level fertig sind)
 				levelNumber = 1;
 				$('#allelevel').html('<b>Alle Level geschafft!</b>');	
 			}
